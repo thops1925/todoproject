@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\merntodo"
+		}
+	],
+	"settings": {
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"prettier.insertPragma": true,
+		"prettier.requireConfig": true,
+		"prettier.requirePragma": true,
+		"prettier.resolveGlobalModules": true,
+		"prettier.jsxBracketSameLine": true,
+		"prettier.jsxSingleQuote": true,
+		"prettier.trailingComma": "all",
+		"prettier.vueIndentScriptAndStyle": true,
+		"prettier.useTabs": true,
+		"prettier.withNodeModules": true,
+		"kite.codefinder.enableLineDecoration": true,
+		"kite.developerMode": true,
+		"kite.enableOptionalCompletionsTriggers": true
+	}
+}
