@@ -10,7 +10,7 @@ export default function List() {
 
     useEffect(() => {
         const fetchTodo = async () => {
-            const todosz = await axios.get('http://localhost:5000/thops').then(res => res.data)
+            const todosz = await axios.get('https://thopzapi.herokuapp.com/thops').then(res => res.data)
             setTodo(todosz)
         }
         fetchTodo()
@@ -19,7 +19,7 @@ export default function List() {
 
 
     const deletePost = (id) => {
-        axios.delete('http://localhost:5000/thops/delete/' + id)
+        axios.delete('https://thopzapi.herokuapp.com/thops/delete/' + id)
             .then(res => res.data)
         setTodo(pre => {
             return pre.filter(item => item._id !== id)

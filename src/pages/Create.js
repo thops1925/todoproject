@@ -11,7 +11,7 @@ export default function Create() {
     const history = useHistory()
 
     const onSubmit = async (data) => {
-        await axios.post('http://localhost:5000/thops/create', data)
+        await axios.post('https://thopzapi.herokuapp.com/thops/create', data)
         history.push('/')
     }
 

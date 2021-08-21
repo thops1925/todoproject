@@ -11,14 +11,14 @@ export default function Edit() {
 
     useEffect(() => {
         const getTodo = async () => {
-            const todoz = await axios.get(`http://localhost:5000/thops/${match.params.id}`).then(res => res.data)
+            const todoz = await axios.get(`https://thopzapi.herokuapp.com/thops/${match.params.id}`).then(res => res.data)
             setTodo(todoz)
         }
         getTodo()
     }, [match.params.id])
 
     const onSubmit = async (data) => {
-        await axios.post(`http://localhost:5000/thops/${match.params.id}`, data)
+        await axios.post(`https://thopzapi.herokuapp.com/thops/${match.params.id}`, data)
         history.push('/')
     }
 
